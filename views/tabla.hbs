@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css.css">
+</head>
+<body>
+
+
+   <div class="nigg">
+    <div class="tabla_periodica" >
+        {{#each elementos as |element|}}
+        {{#if  (validar_index @index 18)}}
+        <div class="group">
+            {{#each element as |elements|}}
+            {{#if (valida_color elements)}}
+       <div class="elemento {{valida_color elements}}">
+          <abbr class="simbolo">{{elements}}</abbr>
+        </div>
+        {{/if}}
+        {{/each}}
+        </div>
+           {{/if}}
+
+        {{/each}}
+    </div>
+
+    <div class="tabla_periodica">
+         {{#each elementos as |element|}}
+        {{#if  (validar_index2 @index 18)}}
+            {{#each element as |elements|}}
+             {{#if (valida_color elements)}}
+       <div class="elemento {{valida_color elements}}">
+          <abbr class="simbolo">{{elements}}</abbr>
+        </div>
+         {{/if}}
+        {{/each}}
+        </div>
+           {{/if}}
+
+        {{/each}}
+        
+        
+
+<div class="tabla_periodica">
+     {{#each elementos as |element|}}
+        {{#if  (validar_index2 @index 19)}}
+            {{#each element as |elements|}}
+             {{#if (valida_color elements)}}
+       <div class="elemento {{valida_color elements}}">
+          <abbr class="simbolo">{{elements}}</abbr>
+        </div>
+          {{/if}}
+        {{/each}}
+        </div>
+           {{/if}}
+        {{/each}}
+ 
+  
+</div>
+
+<ul class="nigg2">
+<li><h2 class="cajita_color morado">Alcalinos</h2></li>
+<li><h2 class="cajita_color morado_claro">Alcalinoterreos</h2></li>
+<li><h2 class="cajita_color naranja_claro">Metales_Transicion</h2></li>
+<li><h2 class="cajita_color naranja_casirojo">Lantanidos</h2></li>
+<li><h2 class="cajita_color rosado_raro">Actinidos</h2></li>
+<li><h2 class="cajita_color amarillo">Otros_Metales</h2></li>
+<li><h2 class="cajita_color verde_amarilloso">Metaloides</h2></li>
+<li><h2 class="cajita_color verde_oscuro">Otros no metales</h2></li>
+<li><h2 class="cajita_color indigo">Halogenos</h2></li>
+<li><h2 class="cajita_color azul">Gases nobles</h2></li>
+</ul>
+
+</body>
+</html>

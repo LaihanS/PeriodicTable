@@ -1,0 +1,161 @@
+:root {
+  --yellow: #e9b938;
+  --pink: #d2427f;
+  --blue: #28a6da;
+  --green: #6aa32e;
+  --white: #fff;
+  --black: #000;
+  --red: #bd0000;
+  --purple: #9859b6;
+  --orange: #ff8000;
+  --lightblue: #4deeea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 101%;
+  margin: 0;
+  background: #202e38;
+  font-family: "Roboto Mono", monospace;
+  color: var(--white);
+}
+
+h1,
+h2 {
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+h2 {
+  font-size: 15px;
+}
+
+.tabla_periodica {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  top: -100px;
+  margin-top: 10px;
+}
+
+.elemento {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.simbolo {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-left: 5px;
+}
+.nombre {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding-left: 5px;
+}
+
+.morado {
+ background:palevioletred;
+}
+
+.verde {
+  border: 5px solid var(--green);
+  color: var(--green);
+}
+
+
+.naranja_claro {
+background: orange;
+}
+
+.elemento:hover {
+  transform: scale(1.1);
+  color: var(--black);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.nigg{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nigg2{
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.invalid{
+  background: gray;
+}
+
+.amarillo {
+  background: var(--yellow);
+}
+
+.indigo {
+  background: var(--blue);
+}
+
+.verde_amarilloso  {
+  background: var(--green);
+}
+
+.cajita_color {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 200px;
+  height: 20px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.morado_claro {
+  background: var(--purple);
+}
+
+.naranja_casirojo {
+  background: var(--orange);
+}
+.rosado_raro {
+  background: var(--pink);
+}
+
+.azul{
+  background: var(--lightblue);
+}
+
+.verde_oscuro{
+  background: green;
+}
